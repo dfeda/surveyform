@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Childhood Survey Form</title>
+        <link rel="stylesheet" href="style/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="title">Childhood Survey Form</h1>
+                <p id="description" class="description"><em>Thank you for filling out the survey</em></p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input id="email" class="form-control" type="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <p>What is your favorite season?</p>
+                    <select id="dropdown" class="form-control" type="text" name="season" required>
+                        <option disabled="" selected="" value="">Select favorite season</option>
+                        <option value="winter">Winter</option>
+                        <option value="spring">Spring</option>
+                        <option value="summer">Summer</option>
+                        <option value="autumn">Autumn</option>
+                        <option value="none">None</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="friend">How many friends do you believe you have?</label>
+                    <input id="number" class="form-control" type="number" name="friend" placeholder="Enter how many friends you think you have" min="0" max="200">
+                </div>
+                <div class="form-group">
+                    <p>What was your favorite game to play as a kid?</p>
+                    <label><input class="input-radio" name="game" value="tag" type="radio">Tag</label>
+                    <label><input class="input-radio" name="game" value="flag" type="radio">Capture the Flag</label>
+                    <label><input class="input-radio" name="game" value="kball" type="radio">Kickball</label>
+                    <label><input class="input-radio" name="game" value="dball" type="radio">Dodgeball</label>
+                    <label><input class="input-radio" name="game" value="wball" type="radio">Wallball</label>
+                    <label><input class="input-radio" name="game" value="hop" type="radio">Hopscotch</label>
+                    <label><input class="input-radio" name="game" value="square" type="radio">Four Square</label>
+                    <label><input class="input-radio" name="game" value="lights" type="radio">Red Light Green Light</label>
+                    <label><input class="input-radio" name="game" value="other" type="radio" checked>Other</label>
+                </div>
+                <div class="form-group">
+                    <p>Which of these colors are in your top ten colors?</p>
+                    <label style="color: red"><input class="input-checkbox" name="color" value="red" type="checkbox">Red</label>
+                    <label style="color: orange"><input class="input-checkbox" name="color" value="orange" type="checkbox">Orange</label>
+                    <label style="color: yellow"><input class="input-checkbox" name="color" value="yellow" type="checkbox">Yellow</label>
+                    <label style="color: green"><input class="input-checkbox" name="color" value="green" type="checkbox">Green</label>
+                    <label style="color: blue"><input class="input-checkbox" name="color" value="blue" type="checkbox">Blue</label>
+                    <label style="color: indigo"><input class="input-checkbox" name="color" value="blue" type="checkbox">Indigo</label>
+                    <label style="color: violet"><input class="input-checkbox" name="color" value="violet" type="checkbox">Violet</label>
+                </div>
+                <div class="form-group">
+                    <p>What other childhood topics would you like to be surveyed about?</p>
+                    <textarea id="comments" class="input-textarea" name="comments" placeholder="Favorite sport, subject, friend..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button id="submit" class="submit-button" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
